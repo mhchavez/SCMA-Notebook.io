@@ -1,11 +1,11 @@
 title: SMCA-NOTEBOOK
-author: mhchavez
-email: maria.heredia_chavez@uconn.edu
-description:  MCB 5896 - Sequence Based Microbial Community Analysis - University of Connecticut - Fall 2019
+author: Maria Rosas
+email: maryech19@gmail.com
+#description:  MCB 5896 - Sequence Based Microbial Community Analysis - University of Connecticut - Fall 2019
 #generate social links in footer
-social_links:
-   twitter: '@MariaRo84325291'
-   github:  mhchavez
+#social_links:
+   #twitter: '@MariaRo84325291'
+   #github:  mhchavez
 markdown: kramdown
 #theme: jekyll-theme-modernist#
 permalink: /blog/:year/:month/:day/:title
