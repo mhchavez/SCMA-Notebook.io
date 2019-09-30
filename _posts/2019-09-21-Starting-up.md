@@ -31,7 +31,7 @@ the password won’t show up, but it still will receive the information, just fo
 
 At this point we are located at the usr11 directory, located into the mcb5896 directory allocated into the CAM directory in the cluster. <br>
 
-<img align="center" src="/IMAGES/LOCATING.PNG"/></a
+<img align="center" src="/IMAGES/pws.PNG"/></a
 >
 ### mkd and ls commands
 
@@ -45,7 +45,7 @@ check the creation of the directory with "ls"
 
     Bash$: ls
 
-<img align="center" src="/IMAGES/mkandls.PNG"/></a>
+<img align="center" src="/IMAGES/mk_ls.PNG"/></a>
 
 
 ### Copying a directory with files from one location to another
