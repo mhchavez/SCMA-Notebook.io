@@ -9,3 +9,5 @@ email: maryech19@gmail.com
 markdown: kramdown
 #theme: jekyll-theme-modernist#
 permalink: /blog/:year/:month/:day/:title
+
+theme: jekyll-theme-hacker
