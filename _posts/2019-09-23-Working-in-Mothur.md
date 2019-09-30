@@ -1,13 +1,13 @@
 ---
 layout: default
-name: Mothur
-date:2019-09-23
+title: Mothur
+date: 2019-09-23
 ---
 
-# WORKING IN MOTHUR
+# WORKING IN MOTHUR 1
 **OBJECTIVE** prepare and trim a small dataset provided in class using Mothur
 
-### PROCCESSING THE DATA: WORKING WITH MOTHUR
+## PROCCESSING THE DATA: WORKING WITH MOTHUR
 **1. Loading mothur**
 
         Bash$ load module mothur 1/42.3
