@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Starting up
 date: 2019-09-21
 ---
