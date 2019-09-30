@@ -7,6 +7,17 @@ email: maryech19@gmail.com
    #twitter: '@MariaRo84325291'
    #github:  mhchavez
 markdown: kramdown
-theme: jekyll-theme-hacker
 permalink: /blog/:year/:month/:day/:title
+gems:
+  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
 
+# Exclude these files from your production _site
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - CNAME
+
+theme: jekyll-theme-minimal
