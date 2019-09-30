@@ -4,6 +4,7 @@ title: Starting up
 date: 2019-09-21
 ---
 
+
 ## NOTEBOOK SECTION1: USING THE CLUSTER IN WINDOWS 
 
 During the semester we will be using the cluster supported by UCCON Health Center, thus we need to know how to access to it. In this case I will be working in a PC. The following instructions are for other PC's users, and also reviewing some basic commands.
@@ -15,7 +16,7 @@ During the semester we will be using the cluster supported by UCCON Health Cente
 3. Type password: xxxxxx 
 
 ### Out of the head node
-Once into the cluster we have to move out of the head node by requiring a place where to run commands in the cluster, to do it we use the following command:
+<p> Once into the cluster we have to move out of the head node by requiring a place where to run commands in the cluster, to do it we use the following command: </p>
   
     Bash$ ssrun --pty -p mcbstudent --qos=mcbstudent --mem=2G bash
 
@@ -49,8 +50,8 @@ check the creation of the directory with "ls"
 
 ### Copying a directory with files from one location to another
 
-To copy a group of files located in a Directory to other we need to specify the path after the “cp -a” command. The first part following the command specifies the location of the files to be copied, the second part specifies where the directory with the files will end up. We created before a directory with the same name inside the directory that will receive the copy, thus all the files of the original directory will end up in it. If we don’t have a directory with the same name, the command will create the directory and then move the files into it. Note that we are copying without going outside the present location (mcb5896/urs11).
-After copying we will verify that the files were copied into mcb5896/usr11/MiSeq_SOP
+<p> To copy a group of files located in a Directory to other we need to specify the path after the “cp -a” command. The first part following the command specifies the location of the files to be copied, the second part specifies where the directory with the files will end up. We created before a directory with the same name inside the directory that will receive the copy, thus all the files of the original directory will end up in it. If we don’t have a directory with the same name, the command will create the directory and then move the files into it. Note that we are copying without going outside the present location (mcb5896/urs11).
+After copying we will verify that the files were copied into mcb5896/usr11/MiSeq_SOP </p>
 
 <img align="center" src="/IMAGES/copyingfigure.PNG"/></a>
 
@@ -92,6 +93,3 @@ Check the content of the ~/usr11/chipmunk_fastq with “ls” command
 We will be using this dataset for the next analysis using mothur
 
 Content created on: November 21, 2019
-
-This is it!
-What a wonderful post!
