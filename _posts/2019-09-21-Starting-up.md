@@ -1,10 +1,3 @@
----
-layout: default
-title: Starting up
-date: 2019-09-21
----
-
-
 ## NOTEBOOK SECTION1: USING THE CLUSTER IN WINDOWS 
 
 During the semester we will be using the cluster supported by UCCON Health Center, thus we need to know how to access to it. In this case I will be working in a PC. The following instructions are for other PC's users, and also reviewing some basic commands.
