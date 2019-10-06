@@ -2,7 +2,7 @@
 
 During the semester we will be using the cluster supported by UCCON Health Center, thus we need to know how to access to it. In this case I will be working in a PC. The following instructions are for other PC's users, and also reviewing some basic commands.
 
-## GETTING INTO THE CLUSTER
+## A) GETTING INTO THE CLUSTER
 1. Install Putty for access to the cluster, it can be found in: https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
 2. Access the cluster with the following: (note that mcbusr11 is the user name assigned at class) “mcbusr11@xanadu-submit-ext.cam.uchc.edu”
 2. Ask for Host key .. -> Yes
@@ -52,7 +52,7 @@ After copying we will verify that the files were copied into mcb5896/usr11/MiSeq
 <img align="center" src="/IMAGES/copyingfigure.PNG"/></a>
 
 
-## SECURE COPY FROM THE CLUSTER TO COMPUTER
+## B) SECURE COPY FROM THE CLUSTER TO COMPUTER
 
 We can copy files and directories from the cluster to our own files in our working station using different programs like FileZilla or WinSCP. The following demonstration has been done using WinSCP.
 
@@ -73,9 +73,9 @@ We can also send it to other location in the cluster, this time we are copying i
 <img align="center" src="/IMAGES/chekingtrasnferintocluster.PNG"/></a>
 
 
-### HOMEWORK
+### C) HOMEWORK
 
-In the directory usr11 create a directory with the name chipmunk_fastq (using “mkdir” command), and check it with ls (will show the content of the usr11 directory)
+**TASK: In the directory usr11 create a directory with the name chipmunk_fastq (using “mkdir” command), and check it with "ls" command  **
 
 To copy the directory "chipmunk_fastq" and its content from " mcb5896/classFiles to ~/mcb5896/usr11" we use the code:
 
