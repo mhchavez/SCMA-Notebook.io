@@ -62,8 +62,11 @@ We can copy files and directories from the cluster to our own files in our worki
 After logging in, we will have to find the folder in our local computer where we want to place the directories coming from the cluster.
 We are transferring the "transferthistext.txt" file from the cluster (path:  ~/mcb5896/classFiles/)
 
-<img align="center" src="/IMAGES/transferwiscp.PNG"/></a>
-<img align="center" src="/IMAGES/transfer2.PNG"/></a>
+<table style="width:100%">
+  <tr>
+    <th>img align="center" src="/IMAGES/transferwiscp.PNG"/></a></th>
+    <th><img align="center" src="/IMAGES/transfer2.PNG"/></a></th>
+ </table>
 
 In the figure we can see that we have a copy of the *txt file in our local folder
 <img align="center" src="/IMAGES/transferconfirmation.PNG"/></a>
