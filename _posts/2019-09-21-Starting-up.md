@@ -64,12 +64,12 @@ We are transferring the "transferthistext.txt" file from the cluster (path:  ~/m
 
 <table style="width:100%">
   <tr>
-    <th>img align="center" src="/IMAGES/transferwiscp.PNG"/></a></th>
+    <th><img align="center" src="/IMAGES/transferwiscp.PNG"/></a></th>
     <th><img align="center" src="/IMAGES/transfer2.PNG"/></a></th>
  </table>
 
 In the figure we can see that we have a copy of the *txt file in our local folder
-<img align="center" src="/IMAGES/transferconfirmation.PNG"/></a>
+<img align="center" width="50%" height="50%"src="/IMAGES/transferconfirmation.PNG"/></a>
 
 We can also send it to other location in the cluster, this time we are copying it into the usr11 directory. Using the terminal we can check that the file is now in our cluster directory /mcb5896/usr11/
 
