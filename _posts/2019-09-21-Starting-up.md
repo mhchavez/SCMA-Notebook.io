@@ -24,7 +24,7 @@ the password won’t show up, but it still will receive the information, just fo
 
 At this point we are located at the usr11 directory, located into the mcb5896 directory allocated into the CAM directory in the cluster. <br>
 
-<img align="center" src="/IMAGES/pws.PNG"/></a
+<img align="center" src="/IMAGES/pwd.PNG"/></a
 >
 ### mkd and ls commands
 
