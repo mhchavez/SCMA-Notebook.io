@@ -11,21 +11,24 @@ During the semester we will be using the cluster supported by UCCON Health Cente
 ### Out of the head node
 <p> Once into the cluster we have to move out of the head node by requiring a place where to run commands in the cluster, to do it we use the following command: </p>
   
-    Bash$ ssrun --pty -p mcbstudent --qos=mcbstudent --mem=2G bash
+    Bash$: ssrun --pty -p mcbstudent --qos=mcbstudent --mem=2G bash
 
 ### Changing the password:
 
-    Bash$ passwd
+    Bash$: passwd
 
 the password won’t show up, but it still will receive the information, just follow the instructions
 <img align="center" src="/IMAGES/psswdchange.PNG"/></a>
 
 ### Locating where I am:
 
-At this point we are located at the usr11 directory, located into the mcb5896 directory allocated into the CAM directory in the cluster. <br>
+At this point we are located at the usr11 directory, located into the mcb5896 directory allocated into the CAM directory in the cluster.
+Every time we want to know our location type
+        
+    Bash$: pwd
 
-<img align="center" src="/IMAGES/pwd.PNG"/></a
->
+<img align="center" src="/IMAGES/pwd.PNG"/></a>
+
 ### mkd and ls commands
 
 Is important to allways keep the files and directories organized, to do so we can create directories with
