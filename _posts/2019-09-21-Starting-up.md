@@ -18,9 +18,8 @@ During the semester we will be using the cluster supported by UCCON Health Cente
     Bash$: passwd
 
 the password won’t show up, but it still will receive the information, just follow the instructions
-<center>
-<img  width="50%" height="50%" src="/IMAGES/psswdchange.PNG"/ class="center">
-</center>
+<img  width="50%" height="50%" src="/IMAGES/psswdchange.PNG" class="center" />
+
 
 ### Locating where I am:
 
@@ -29,7 +28,7 @@ Every time we want to know our location type
         
     Bash$: pwd
 
-<img align="center" src="/IMAGES/pwd.PNG"/ class="center">
+<img src="/IMAGES/pwd.PNG" class="center"/>
 
 ### mkd and ls commands
 
@@ -43,7 +42,7 @@ check the creation of the directory with "ls"
 
     Bash$: ls
 
-<img align="center" src="/IMAGES/mk_ls.PNG"/ class="center">
+<img src="/IMAGES/mk_ls.PNG" class="center" />
 
 
 ### Copying a directory with files from one location to another
@@ -51,7 +50,7 @@ check the creation of the directory with "ls"
 <p> To copy a group of files located in a Directory to other we need to specify the path after the “cp -a” command. The first part following the command specifies the location of the files to be copied, the second part specifies where the directory with the files will end up. We created before a directory with the same name inside the directory that will receive the copy, thus all the files of the original directory will end up in it. If we don’t have a directory with the same name, the command will create the directory and then move the files into it. Note that we are copying without going outside the present location (mcb5896/urs11).
 After copying we will verify that the files were copied into mcb5896/usr11/MiSeq_SOP </p>
 
-<img align="center" src="/IMAGES/copyingfigure.PNG"/></a>
+<img class="center" src="/IMAGES/copyingfigure.PNG" />
 
 
 ## B) SECURE COPY FROM THE CLUSTER TO COMPUTER
@@ -66,16 +65,16 @@ We are transferring the "transferthistext.txt" file from the cluster (path:  ~/m
 
 <table style="width:100%">
   <tr>
-    <th><img src="/IMAGES/transferwiscp.PNG"/></a></th>
-    <th><img src="/IMAGES/transfer2.PNG"/></a></th>
+    <th><img class="center" src="/IMAGES/transferwiscp.PNG"/></th>
+    <th><img class="center" src="/IMAGES/transfer2.PNG"/></th>
  </table>
 
 In the figure we can see that we have a copy of the *txt file in our local folder
-<img align="center" width="50%" height="50%" src="/IMAGES/transferconfirmation.PNG"/></a>
+<img class="center" width="50%" height="50%" src="/IMAGES/transferconfirmation.PNG"/> 
 
 We can also send it to other location in the cluster, this time we are copying it into the usr11 directory. Using the terminal we can check that the file is now in our cluster directory /mcb5896/usr11/
 
-<img src="/IMAGES/chekingtrasnferintocluster.PNG"/ class="center">
+<img src="/IMAGES/chekingtrasnferintocluster.PNG" class="center"/>
 
 
 ### C) HOMEWORK
@@ -88,7 +87,7 @@ To copy the directory "chipmunk_fastq" and its content from " mcb5896/classFiles
     
 In the image we can see that the directory has been copied
 
-<img class="center" src="/IMAGES/chipmunkdir.PNG"/>
+<img class="center" src="/IMAGES/chipmunkdir.PNG" />
 
 Check the content of the ~/usr11/chipmunk_fastq with “ls” command
 We will be using this dataset for the next analysis using mothur
