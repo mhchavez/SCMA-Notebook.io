@@ -57,11 +57,11 @@ For this command our Input / Output will be:
 
         mothur> system(head -n 10 stability.contigs.groups)
         
-the stability.trim.contigs.fasta and stability.trim.contigs.qual contain the information of the contigs that passed the quality constraints, while the "scrap" files contains data that did not pass the quality constraints, stability.contigs.group have the information linking samples and contigs and finally the stability.contigs.report contains information about the contigs like the number of N called bases, we can see summarize information of this file using command in step 3.
- 
-**3. Summarizing**
+the stability.trim.contigs.fasta and stability.trim.contigs.qual contain the information of the contigs that passed the quality constraints, while the "scrap" files contains data that did not pass the quality constraints, stability.contigs.group have the information linking samples and contigs and finally the stability.contigs.report contains information about the contigs like the number of N called bases.
 
-To know how many sequences we lost and how many we kept
+**3. Summarizing the data** 
+
+To know how many sequences we lost and how many we kept after obtaining contigs
        
          mothur > summary.seqs(fasta=stability.trim.contigs.fasta )
 <table border-left="15">
