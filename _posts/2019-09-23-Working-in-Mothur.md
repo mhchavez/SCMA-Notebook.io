@@ -1,11 +1,8 @@
----
-layout: default
-title: Mothur
-date: 2019-09-23
----
 
 # WORKING IN MOTHUR 1
-**OBJECTIVE** prepare and trim a small dataset provided in class using Mothur
+In our folder are raw sequence dataof *the chipmunk dataset*, our previously generated *stability* file. Our job is to quality control the reads and analyze them. In the following directions we are following the Schloss pipeline in mothur.
+
+**OBJECTIVE** prepare and trim a small dataset  provided in class using Mothur
 
 ## PROCCESSING THE DATA: WORKING WITH MOTHUR
 **1. Loading mothur**
