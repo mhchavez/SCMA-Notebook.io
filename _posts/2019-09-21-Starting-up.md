@@ -18,7 +18,7 @@ During the semester we will be using the cluster supported by UCCON Health Cente
     Bash$: passwd
 
 the password won’t show up, but it still will receive the information, just follow the instructions
-<img align="center" src="/IMAGES/psswdchange.PNG"/></a>
+<img align="center" width="50%" height="50%" src="/IMAGES/psswdchange.PNG"/></a>
 
 ### Locating where I am:
 
