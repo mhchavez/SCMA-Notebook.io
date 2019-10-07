@@ -1,8 +1,9 @@
 
-# WORKING IN MOTHUR 1
-In our folder are raw sequence data of *the chipmunk dataset*, our previously generated *stability* file. Our job is to quality control the reads and analyze them. In the following directions we are following the Schloss pipeline in mothur.
+# WORKING IN MOTHUR 2
 
-**OBJECTIVE** prepare and trim a small dataset  provided in class using Mothur
+**OBJECTIVE** prepare and trim the chipmunk_fastq dataset provided in class using Mothur
+
+**Recapitulating:** In our folder are raw sequence data of *the chipmunk dataset*, our previously generated *stability* file. Our job is to quality control the reads and analyze them. 
 
 ## PROCCESSING THE DATA: WORKING WITH MOTHUR
 **1. Loading mothur**
