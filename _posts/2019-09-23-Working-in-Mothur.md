@@ -10,12 +10,42 @@
 
         Bash$ load module mothur 1/42.3
         Bash $ mothur 
+**2. Grouping the reads**
+Once we have the stability files, we are going to group all forward and reverse reads belonging to a sample into one.
+
         mothur > make.contigs(file=stability.files,processors=4)
-Or
+        
+Or, if we created stability file with notepad:
         
         mothur> make.contigs(file=stability.txt,processors=4)
+        
+For this command our Input / Output will be: 
 
-The stability files with its content, the scrap files do not have information, meaning that there are not sequences that has been trimmed in this first step.
+<table border-left="15">
+<tr>
+     <td bgcolor="#AED6F1" align="center"><strong>INPUT</strong>
+     </td>
+     <td bgcolor="#AED6F1" align="center"><strong>OUTPUT</strong>
+     </td>
+</tr>
+<tr>
+     <td bgcolor="#EBF5FB"> 
+           <ul>
+                   <li> stability.file</li>
+     </td>
+     <td bgcolor="#EBF5FB">
+          <ul>
+                 <li> stability.trim.contigs.fasta</li>
+                 <li> stability.trim.contigs.qual</li>
+                <li>stability.scrap.contigs.fasta</li>
+                <li>stability.scrap.contigs.qual</li>
+                <li>stability.contigs.report</li>
+                <li>stability.contigs.groups</li>
+           </ul>
+     </td>
+          </tr>
+
+
 
 **2. Reading the first 10 lines of the created files**
         
