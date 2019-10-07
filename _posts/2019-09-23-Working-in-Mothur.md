@@ -1,5 +1,5 @@
 
-# WORKING IN MOTHUR 2
+# MOTHUR 2: TRIMMING
 
 **OBJECTIVE** prepare and trim the chipmunk_fastq dataset provided in class using Mothur
 
