@@ -1,1 +1,169 @@
-# MOTHUR 3: 
+# MOTHUR 3: WORKING WITH CLEANER DATA
+
+**OBJECTIVE** 
+
+**Recapitulating:** In our folder now we have good data that we are going to use for further process 
+
+Located in my working directory ...
+
+## PREPARING DATA FOR PROCCESS
+
+**1. Creating list of unique sequences**
+
+Mothur will identified sequences that are duplicated and merge them
+
+        mothur > unique.seqs(fasta=stability.trim.contigs.good.fasta)
+<img src=ntbk_1>
+
+<table border-left="15">
+<tr>
+     <td bgcolor="#AED6F1" align="center"><strong>INPUT</strong></td>
+     <td bgcolor="#AED6F1" align="center"><strong>OUTPUT</strong></td>
+</tr>
+<tr>
+     <td bgcolor="#EBF5FB"> 
+           <ul>
+           <li> stability.trim.contigs.good.fasta</li>
+     </td>
+     <td bgcolor="#EBF5FB">
+          <ul>
+                <li>stability.trim.contigs.good.names (which read with which sequence)</li>
+                <li>stability.trim.contigs.good.unique.fasta</li>
+          </ul>
+     </td>
+ </tr>
+ </table>
+        
+ 
+**2. Count seqs**
+summarizing the data created for better process
+
+        mothur > count.seqs(name=stability.trim.contigs.good.names, group=stability.contigs.good.groups)
+ <img src=nt_2>
+ 
+ table border-left="15">
+<tr>
+     <td bgcolor="#AED6F1" align="center"><strong>INPUT</strong></td>
+     <td bgcolor="#AED6F1" align="center"><strong>OUTPUT</strong></td>
+</tr>
+<tr>
+     <td bgcolor="#EBF5FB"> 
+           <ul>
+           <li> stability.trim.contigs.good.names</li>
+           <li> stability.contigs.good.groups </li>
+     </td>
+     <td bgcolor="#EBF5FB">
+          <ul>
+                <li>stability.trim.contigs.good.count_table</li>
+          </ul>
+     </td>
+ </tr>
+ </table>
+       
+ to view how the files are  
+ 
+mothur > system (head stability.trim.contigs.good.count_table)
+
+  <img src=nt_3><img src=nt_4>
+ 
+ **3. Summarizing again**
+ 
+        mothur> summary.seqs(fasta=stability.trim.contigs.good.unique.fasta, count=stability.trim.contigs.good.count_table)
+        
+        
+ <img src=nt_5>
+ 
+ table border-left="15">
+<tr>
+     <td bgcolor="#AED6F1" align="center"><strong>INPUT</strong></td>
+     <td bgcolor="#AED6F1" align="center"><strong>OUTPUT</strong></td>
+</tr>
+<tr>
+     <td bgcolor="#EBF5FB"> 
+           <ul>
+           <li> stability.trim.contigs.good.unique.fasta</li>
+           <li> tability.trim.contigs.good.count_table </li>
+     </td>
+     <td bgcolor="#EBF5FB">
+          <ul>
+                <li>stability.trim.contigs.good.unique.summary</li>
+                <li></li>
+          </ul>
+     </td>
+ </tr>
+ </table>
+ 
+ ## ALIGNING
+ **1. Obtaining reference data**
+ Before aligment we need to have a dataset to align with, for the purpose of the class we will use the silva bacteria dataset copied from the class directory                                   
+      
+          bash-4.2$ cd chipmunk_fastq/
+          bash-4.2$ cp /home/CAM/mcb5896/classFiles/Trainset9_032012.pds/trainset9_032012.pds.fasta .
+          bash-4.2$ cp /home/CAM/mcb5896/classFiles/Trainset9_032012.pds/trainset9_032012.pds.tax .
+          bash-4.2$ cp /home/CAM/mcb5896/classFiles/silva.bacteria/silva.bacteria.fasta .
+  
+  Then, since SILVA accomodate more data than we need, we will tell mothur to work just with data for the V4 region
+  
+          mothur> pcr.seqs(fasta=silva.bacteria.fasta ,start=11894, end=25319,keepdots=F)
+
+ <img src=nt3_6/>
+ 
+  table border-left="15">
+<tr>
+     <td <strong>INPUT</strong></td>
+     <td <strong>OUTPUT</strong></td>
+</tr>
+<tr>
+     <td bgcolor="#EBF5FB"> 
+           <ul>
+           <li> ssilva.bacteria.fasta</li>
+      </td>
+     <td bgcolor="#EBF5FB">
+          <ul>
+                <li>silva.bacteria.pcr.fasta</li>
+                <li></li>
+          </ul>
+     </td>
+ </tr>
+ </table>
+ 
+ And we will save the file with other name:
+ 
+           mothur> rename.file(input=silva.bacteria.pcr.fasta, new=silva.v4.fasta)
+           
+ Checking the new file
+           mothur> summary.seqs(fasta=silva.v4.fasta)
+
+<img src=nt_7/>
+
+** 2. Aligning:**
+ 
+           mothur> align.seqs(fasta=stability.trim.contigs.good.unique.fasta, reference=silva.v4.fasta)
+           
+ 
+  table border-left="15">
+<tr>
+     <td <strong>INPUT</strong></td>
+     <td <strong>OUTPUT</strong></td>
+</tr>
+<tr>
+     <td bgcolor="#EBF5FB"> 
+           <ul>
+           <li> ssilva.bacteria.fasta</li>
+           <li>silva.v4.fasta</li>
+      </td>
+     <td bgcolor="#EBF5FB">
+          <ul>
+                <li>stability.trim.contigs.good.unique.align</li>
+                <li>stability.trim.contigs.good.unique.align.report</li> 
+                <li>stability.trim.contigs.good.unique.flip.accnos</li>
+          </ul>
+     </td>
+ </tr>
+ </table>
+
+** 3. Summarizing the aligment**
+
+         mothur > summary.seqs(fasta=stability.trim.contigs.good.unique.align, count=stability.trim.contigs.good.count_table)
+
+<img src="nt3_8" />
