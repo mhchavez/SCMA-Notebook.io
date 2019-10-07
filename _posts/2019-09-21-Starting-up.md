@@ -19,7 +19,7 @@ During the semester we will be using the cluster supported by UCCON Health Cente
 
 the password won’t show up, but it still will receive the information, just follow the instructions
 <center>
-<img  width="50%" height="50%" src="/IMAGES/psswdchange.PNG"/>
+<img  width="50%" height="50%" src="/IMAGES/psswdchange.PNG"/ class="center">
 </center>
 
 ### Locating where I am:
@@ -29,7 +29,7 @@ Every time we want to know our location type
         
     Bash$: pwd
 
-<img align="center" src="/IMAGES/pwd.PNG"/></a>
+<img align="center" src="/IMAGES/pwd.PNG"/ class="center">
 
 ### mkd and ls commands
 
@@ -43,7 +43,7 @@ check the creation of the directory with "ls"
 
     Bash$: ls
 
-<img align="center" src="/IMAGES/mk_ls.PNG"/></a>
+<img align="center" src="/IMAGES/mk_ls.PNG"/ class="center">
 
 
 ### Copying a directory with files from one location to another
@@ -66,8 +66,8 @@ We are transferring the "transferthistext.txt" file from the cluster (path:  ~/m
 
 <table style="width:100%">
   <tr>
-    <th><img align="center" src="/IMAGES/transferwiscp.PNG"/></a></th>
-    <th><img align="center" src="/IMAGES/transfer2.PNG"/></a></th>
+    <th><img src="/IMAGES/transferwiscp.PNG"/></a></th>
+    <th><img src="/IMAGES/transfer2.PNG"/></a></th>
  </table>
 
 In the figure we can see that we have a copy of the *txt file in our local folder
@@ -75,7 +75,7 @@ In the figure we can see that we have a copy of the *txt file in our local folde
 
 We can also send it to other location in the cluster, this time we are copying it into the usr11 directory. Using the terminal we can check that the file is now in our cluster directory /mcb5896/usr11/
 
-<img align="center" src="/IMAGES/chekingtrasnferintocluster.PNG"/></a>
+<img src="/IMAGES/chekingtrasnferintocluster.PNG"/ class="center">
 
 
 ### C) HOMEWORK
@@ -88,7 +88,7 @@ To copy the directory "chipmunk_fastq" and its content from " mcb5896/classFiles
     
 In the image we can see that the directory has been copied
 
-<img align="center" src="/IMAGES/chipmunkdir.PNG"/></a>
+<img class="center" src="/IMAGES/chipmunkdir.PNG"/>
 
 Check the content of the ~/usr11/chipmunk_fastq with “ls” command
 We will be using this dataset for the next analysis using mothur
