@@ -92,4 +92,5 @@ In the image we can see that the directory has been copied
 Check the content of the ~/usr11/chipmunk_fastq with “ls” command
 We will be using this dataset for the next analysis using mothur
 
+[Back to home](https://github.com/mhchavez/SMCA-notebook1/wiki)
 Content created on: November 21, 2019
