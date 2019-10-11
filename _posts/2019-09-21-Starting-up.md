@@ -95,4 +95,4 @@ We will be using this dataset for the next analysis using mothur
 
 Content created on: November 21, 2019
 
-[:home: Back to home](https://github.com/mhchavez/SMCA-notebook1/wiki)
+[:house: Back to home](https://github.com/mhchavez/SMCA-notebook1/wiki)
