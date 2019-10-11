@@ -80,4 +80,3 @@ In this step we check how many reads passed the screening in step 4
 
 [Back to home :house: ](https://github.com/mhchavez/SMCA-notebook1/wiki)
 
-[Back to home}(https://github.com/mhchavez/SMCA-notebook1/wiki)
