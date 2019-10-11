@@ -10,7 +10,9 @@
 
         Bash$ load module mothur 1/42.3
         Bash $ mothur 
+        
 **2. Grouping the reads**
+
 Once we have the stability files, we are going to group all forward and reverse reads belonging to a sample into one contig and in the process of matching if there is disagreements in the base being call on each of the reads the algoritm will decide base on the quality to keep one or other base or called N.
 
         mothur > make.contigs(file=stability.files,processors=4)
@@ -21,19 +23,7 @@ Or, if we created stability file with notepad:
         
 For this command our Input / Output will be: 
 
-<table border-left="15">
-<tr>
-     <td bgcolor="#AED6F1" align="center"><strong>INPUT</strong>
-     </td>
-     <td bgcolor="#AED6F1" align="center"><strong>OUTPUT</strong>
-     </td>
-</tr>
-<tr>
-     <td bgcolor="#EBF5FB"> 
-           <ul>
-                   <li> stability.file</li>
-     </td>
-     <td bgcolor="#EBF5FB">
+
           <ul>
                 <li>stability.trim.contigs.fasta</li>
                 <li>stability.trim.contigs.qual</li>
@@ -41,10 +31,7 @@ For this command our Input / Output will be:
                 <li>stability.scrap.contigs.qual</li>
                 <li>stability.contigs.report</li>
                 <li>stability.contigs.groups</li>
-           </ul>
-     </td>
-          </tr>
- </table>
+          </ul>
 
 
    **SIDE NOTE: Reading the first 10 lines of the created files**
@@ -64,25 +51,11 @@ the stability.trim.contigs.fasta and stability.trim.contigs.qual contain the inf
 To know how many sequences we lost and how many we kept after obtaining contigs
        
          mothur > summary.seqs(fasta=stability.trim.contigs.fasta )
-<table border-left="15">
-<tr>
-     <td bgcolor="#AED6F1" align="center"><strong>INPUT</strong>
-     </td>
-     <td bgcolor="#AED6F1" align="center"><strong>OUTPUT</strong>
-     </td>
-</tr>
-<tr>
-     <td bgcolor="#EBF5FB"> 
-           <ul>
-           <li> stability.trim.contigs.fasta</li>
-     </td>
-     <td bgcolor="#EBF5FB">
+   
+OUTPUT:
            <ul>
            <li>stability.trim.contigs.summary</li> 
            </ul>
-     </td>
-          </tr>
- </table>
 
        
 **4. Trimming the data**
@@ -91,32 +64,20 @@ In this step everything that is bigger than 275 and reads with ambiguous bases w
         
         mothur> screen.seqs(fasta=stability.trim.contigs.fasta, group=stability.contigs.groups, maxambig=0, maxlength=275)
    
-   <table border-left="15">
-<tr>
-     <td bgcolor="#AED6F1" align="center"><strong>INPUT</strong>
-     </td>
-     <td bgcolor="#AED6F1" align="center"><strong>OUTPUT</strong>
-     </td>
-</tr>
-<tr>
-     <td bgcolor="#EBF5FB"> 
-           <ul>
-                   <li> stability.trim.contigs.</li>
-                   <li> stability.contigs.groups</li>
-     </td>
-     <td bgcolor="#EBF5FB">
+  OUTPUT:
           <ul>
           <li>stability.contigs.pick.groups</li>
           <li>stability.trim.contigs.good.fasta</li>
           <li>stability.trim.contigs.bad.accnos</li>
           <li>stability.contigs.good.groups</li>
           </ul>
-     </td>
-          </tr>
- </table>
-
+     
 
 **5. Summarizing the stability.contigs.good.group (the file to be used from now on)**
 In this step we check how many reads passed the screening in step 4
         
         mothur>summary.seqs(fasta=stability.trim.contigs.good.fasta)
+
+[Back to home :house: ](https://github.com/mhchavez/SMCA-notebook1/wiki)
+
+[Back to home}(https://github.com/mhchavez/SMCA-notebook1/wiki)
