@@ -11,7 +11,7 @@ During the semester we will be using the cluster supported by UCCON Health Cente
 ### Out of the head node
 <p> Once into the cluster we have to move out of the head node by requiring a place where to run commands in the cluster, to do it we use the following command: </p>
   
-    Bash$: ssrun --pty -p mcbstudent --qos=mcbstudent --mem=2G bash
+    Bash$: srun --pty -p mcbstudent --qos=mcbstudent --mem=2G bash
 
 ### Changing the password:
 
