@@ -1,15 +1,26 @@
-## NOTEBOOK SECTION1: USING THE CLUSTER IN WINDOWS 
+# USING THE CLUSTER IN WINDOWS 
+**Objective**
+<ul>
+  <li>Get initial directions to work with the terminal and at the cluster</li>
+</ul>
+    
+**introduction**
 
 During the semester we will be using the cluster supported by UCCON Health Center, thus we need to know how to access to it. In this case I will be working in a PC. The following instructions are for other PC's users, and also reviewing some basic commands.
 
 ## A) GETTING INTO THE CLUSTER
+
 1. Install Putty for access to the cluster, it can be found in: https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
+
 2. Access the cluster with the following: (note that mcbusr11 is the user name assigned at class) “mcbusr11@xanadu-submit-ext.cam.uchc.edu”
-2. Ask for Host key .. -> Yes
-3. Type password: xxxxxx 
+
+3. Ask for Host key .. -> Yes
+
+4. Type password: xxxxxx 
 
 ### Out of the head node
-<p> Once into the cluster we have to move out of the head node by requiring a place where to run commands in the cluster, to do it we use the following command: </p>
+
+Once into the cluster we have to move out of the head node by requiring a place where to run commands in the cluster, to do it we use the following command:
   
     Bash$: srun --pty -p mcbstudent --qos=mcbstudent --mem=2G bash
 
@@ -17,8 +28,9 @@ During the semester we will be using the cluster supported by UCCON Health Cente
 
     Bash$: passwd
 
-the password won’t show up, but it still will receive the information, just follow the instructions
-<img  width="50%" height="50%" src="/IMAGES/psswdchange.PNG" class="center" />
+Note: the password won’t show up, but it still will receive the information, just follow the instructions
+<
+img  width="50%" height="50%" src="/IMAGES/psswdchange.PNG" class="center" />
 
 
 ### Locating where I am:
