@@ -23,15 +23,14 @@ Or, if we created stability file with notepad:
         
 For this command our Input / Output will be: 
 
-
-          <ul>
+<ul>
                 <li>stability.trim.contigs.fasta</li>
                 <li>stability.trim.contigs.qual</li>
                 <li>stability.scrap.contigs.fasta</li>
                 <li>stability.scrap.contigs.qual</li>
                 <li>stability.contigs.report</li>
                 <li>stability.contigs.groups</li>
-          </ul>
+ </ul>
 
 
    **SIDE NOTE: Reading the first 10 lines of the created files**
