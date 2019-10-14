@@ -1,4 +1,5 @@
 # USING THE CLUSTER IN WINDOWS 
+
 **Objective**
 <ul>
   <li>Get initial directions to work with the terminal and at the cluster</li>
