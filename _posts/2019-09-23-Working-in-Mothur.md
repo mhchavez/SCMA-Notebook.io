@@ -1,7 +1,8 @@
 
 # MOTHUR 2: TRIMMING
 
-**OBJECTIVE** prepare and trim the chipmunk_fastq dataset provided in class using Mothur
+**Objective:** 
+- Start the first steps of data preparation of the chipmunk_fastq dataset provided in class using Mothur.
 
 **Recapitulating:** In our folder are raw sequence data of *the chipmunk dataset*, our previously generated *stability* file. Our job is to quality control the reads and analyze them. 
 
