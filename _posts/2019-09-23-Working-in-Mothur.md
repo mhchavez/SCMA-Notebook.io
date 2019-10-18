@@ -77,6 +77,8 @@ In this step everything that is bigger than 275 and reads with ambiguous bases w
 In this step we check how many reads passed the screening in step 4
         
         mothur>summary.seqs(fasta=stability.trim.contigs.good.fasta)
+        
+        <p align="center><img src="IMAGES/summary1"></p>
 
 [Back to home :house: ](https://github.com/mhchavez/SMCA-notebook1/wiki)
 
