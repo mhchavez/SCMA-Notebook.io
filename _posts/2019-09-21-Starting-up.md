@@ -106,6 +106,6 @@ Check the content of the ~/usr11/chipmunk_fastq with “ls” command
 We will be using this dataset for the next analysis using mothur
 
 
-Content created on: November 21, 2019
+Content created on: September 21, 2019
 
 [:house: Back to home](https://github.com/mhchavez/SMCA-notebook1/wiki)
