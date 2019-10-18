@@ -9,7 +9,7 @@
 ## PROCCESSING THE DATA: WORKING WITH MOTHUR
 **1. Loading mothur**
 
-        Bash$ load module mothur 1/42.3
+        Bash$ module load mothur/1.42.3
         Bash $ mothur 
         
 **2. Grouping the reads**
