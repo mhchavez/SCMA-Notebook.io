@@ -52,6 +52,8 @@ To know how many sequences we lost and how many we kept after obtaining contigs
        
          mothur > summary.seqs(fasta=stability.trim.contigs.fasta )
    
+<p align="center"><img src="/IMAGES/summary2.JPG"/> </p>
+
 OUTPUT:
            <ul>
            <li>stability.trim.contigs.summary</li> 
