@@ -92,7 +92,7 @@ We can also send it to other location in the cluster, this time we are copying i
 
 ### C) HOMEWORK
 
-**TASK: In the directory usr11 create a directory with the name chipmunk_fastq (using “mkdir” command), and check it with "ls" command  **
+**TASK: In the directory usr11 create a directory with the name chipmunk_fastq (using “mkdir” command), and check it with "ls" command**
 
 To copy the directory "chipmunk_fastq" and its content from " mcb5896/classFiles to ~/mcb5896/usr11" we use the code:
 
