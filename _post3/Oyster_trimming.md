@@ -46,3 +46,25 @@ Output File Names:
 Oyster2.summary
 
 Note: the Original paper mentioned an original 237,842 raw reads, but non all of them were actually public at the database
+
+
+On 11/05
+then after trimming the following is created
+bash-4.2$ ls -l
+total 117567
+-rwxrwx--- 1 mcb5896usr11 domain users     2754 Nov  5 13:51 mothur.1572978889.logfile
+-rw-r--r-- 1 mcb5896usr11 domain users       58 Nov  5 13:11 oligostest3.oligos
+-rwxrwx--- 1 mcb5896usr11 domain users  3530050 Nov  4 18:54 Oyster2.summary
+drwxrwx--- 2 mcb5896usr11 domain users      721 Nov  5 13:31 Oyster_files_fna
+-rwxr-x--- 1 mcb5896usr11 domain users 40935597 Nov  5 13:34 Oyster.fna
+-rwxrwx--- 1 mcb5896usr11 domain users  1695384 Nov  5 13:37 Oyster.scrap.fasta
+-rwxrwx--- 1 mcb5896usr11 domain users        0 Nov  5 13:37 Oyster.scrap.qual
+-rwxrwx--- 1 mcb5896usr11 domain users   152580 Nov  5 13:39 Oyster.scrap.summary
+-rwxrwx--- 1 mcb5896usr11 domain users  3530050 Nov  5 13:35 Oyster.summary
+-rwxrwx--- 1 mcb5896usr11 domain users 40460818 Nov  5 13:37 Oyster.trim.fasta
+-rwxrwx--- 1 mcb5896usr11 domain users        0 Nov  5 13:37 Oyster.trim.qual
+-rwxrwx--- 1 mcb5896usr11 domain users  3376272 Nov  5 13:38 Oyster.trim.summary
+-rwxrwx--- 1 mcb5896usr11 domain users        0 Nov  5 13:37 scrap.count_table
+-rw-r--r-- 1 mcb5896usr11 domain users     5899 Nov  5 13:32 test3.logfile
+-rwxrwx--- 1 mcb5896usr11 domain users        0 Nov  5 13:37 trim.count_table
+
