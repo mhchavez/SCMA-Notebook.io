@@ -167,7 +167,7 @@ It took 1 secs to summarize 47028 sequences.
 		Aligning sequences from Oyster.trim.trim.unique.fasta ...
 		It took 548 secs to align 47028 sequences.
 
-	[WARNING]: 47028 of your sequences generated alignments that eliminated too many bases, a list is provided in 	Oyster.trim.trim.unique.flip.accnos.
+	[WARNING]: 47028 of your sequences generated alignments that eliminated too many bases, a list is provided in 			Oyster.trim.trim.unique.flip.accnos.
 	[NOTE]: 47004 of your sequences were reversed to produce a better alignment.
 
 	It took 548 seconds to align 47028 sequences.
@@ -200,4 +200,112 @@ It took 44 secs to summarize 98177 sequences.
 Output File Names:
 Oyster.trim.trim.unique.summary
 
+mothur > screen.seqs(fasta=Oyster.trim.trim.unique.align, name=Oyster.trim.trim.names, end=23444, optimize=start, criteria=95, processors=2)
+
+Using 2 processors.
+Optimizing start to 16310.
+
+It took 58 secs to screen 47028 sequences, removed 2707.
+
+/******************************************/
+Running command: remove.seqs(accnos=Oyster.trim.trim.unique.bad.accnos.temp, name=Oyster.trim.trim.names)
+Removed 3417 sequences from your name file.
+
+Output File Names: 
+Oyster.trim.trim.pick.names
+
+/******************************************/
+
+Output File Names:
+Oyster.trim.trim.unique.good.align
+Oyster.trim.trim.unique.bad.accnos
+Oyster.trim.trim.good.names
+
+
+It took 110 secs to screen 47028 sequences.
+
+mothur > summary.seqs(fasta=Oyster.trim.trim.unique.good.align, name=Oyster.trim.trim.good.names)
+
+Using 2 processors.
+
+		Start	End	NBases	Ambigs	Polymer	NumSeqs
+Minimum:	10243	23444	151	0	3	1
+2.5%-tile:	10255	23444	187	0	4	2370
+25%-tile:	10259	23444	295	0	4	23691
+Median: 	10261	23444	299	0	4	47381
+75%-tile:	10273	23444	299	0	4	71071
+97.5%-tile:	15887	23444	300	0	6	92392
+Maximum:	16310	26173	300	0	8	94760
+Mean:	10882	23444	287	0	4
+# of unique seqs:	44321
+total # of seqs:	94760
+
+It took 51 secs to summarize 94760 sequences.
+
+Output File Names:
+Oyster.trim.trim.unique.good.summary
+
+
+mothur > filter.seqs(fasta=Oyster.trim.trim.unique.good.align, vertical=T, trump=., processors=2)
+
+Using 2 processors.
+Creating Filter... 
+It took 87 secs to create filter for 44321 sequences.
+
+
+Running Filter... 
+It took 40 secs to filter 44321 sequences.
+
+
+
+Length of filtered alignment: 305
+Number of columns removed: 49695
+Length of the original alignment: 50000
+Number of sequences used to construct filter: 44321
+
+Output File Names: 
+Oyster.filter
+Oyster.trim.trim.unique.good.filter.fasta
+
+
+mothur > unique.seqs(fasta=Oyster.trim.trim.unique.good.filter.fasta, name=Oyster.trim.trim.good.names)
+44321	14149
+
+Output File Names: 
+Oyster.trim.trim.unique.good.filter.names
+Oyster.trim.trim.unique.good.filter.unique.fasta
+
+
+mothur > pre.cluster(fasta=Oyster.trim.trim.unique.good.filter.unique.fasta, name=Oyster.trim.trim.unique.good.filter.names, diffs=2)
+
+Using 2 processors.
+When using running without group information mothur can only use 1 processor, continuing.
+14149	4094	10055
+Total number of sequences before precluster was 14149.
+pre.cluster removed 10055 sequences.
+
+/******************************************/
+Running command: get.seqs(fasta=Oyster.trim.trim.unique.good.filter.unique.fasta, accnos=Oyster.trim.trim.unique.good.filter.unique.precluster.fasta.temp)
+[WARNING]: This command can take a namefile and you did not provide one. The current namefile is Oyster.trim.trim.unique.good.filter.names which seems to match Oyster.trim.trim.unique.good.filter.unique.fasta.
+Selected 4456 sequences from your fasta file.
+
+Output File Names: 
+Oyster.trim.trim.unique.good.filter.unique.pick.fasta
+
+/******************************************/
+Done.
+It took 4 secs to cluster 14149 sequences.
+
+Output File Names: 
+Oyster.trim.trim.unique.good.filter.count_table
+Oyster.trim.trim.unique.good.filter.unique.precluster.fasta
+Oyster.trim.trim.unique.good.filter.unique.precluster.count_table
+Oyster.trim.trim.unique.good.filter.unique.precluster.map
+
+
+mothur > summary.seqs(fasta=Oyster.trim.trim.unique.good.filter.unique.precluster.fasta, name=Oyster.trim.trim.unique.good.filter.names )
+
+Using 2 processors.
+[ERROR]: Your name file contains 14149 unique sequences, but your fasta file contains 4456. File mismatch detected, quitting command.
+quitting mothur
 	
