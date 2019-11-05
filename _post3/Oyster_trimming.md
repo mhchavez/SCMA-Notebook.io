@@ -51,14 +51,14 @@ Know to check how many sequences passed
 
 
 	     	     Start	End	NBases	Ambigs	Polymer	NumSeqs
-     Minimum:	     1	     15	     15	     0	     2	1
-     2.5%-tile:	1	     72	     72	     0	     4	2729
-     25%-tile:	     1	     288	     288	     0	     4	27285
-     Median: 	     1	     299	     299	     0	     4	54569
-     75%-tile:	     1	     299	     299	     0	     4	81853
+     Minimum:	     	1	     15	     15	     0	     2	1
+     2.5%-tile:		1	     72	     72	     0	     4	2729
+     25%-tile:	    	1	     288	     288	     0	     4	27285
+     Median: 	    	1	     299	     299	     0	     4	54569
+     75%-tile:	    	1	     299	     299	     0	     4	81853
      97.5%-tile:	1	     301	     301	     1	     6	106409
-     Maximum:	     1	     600	     600	     6	     19	109137
-     Mean:	     1	     275	     275	     0	     4
+     Maximum:	     	1	     600	     600	     6	     19	109137
+     Mean:	      	1	     275	     275	     0	     4
      # of Seqs:	109137
 
      It took 2 secs to summarize 109137 sequences.
@@ -119,31 +119,15 @@ Output File Names:
 Oyster.trim.trim.summary
 
 
-mothur > list.seqs(fasta=Oyster.trim.trim.fasta)
+	mothur > list.seqs(fasta=Oyster.trim.trim.fasta)
 
-Output File Names: 
-Oyster.trim.trim.accnos
+	Output File Names: 
+	Oyster.trim.trim.accnos
 
+Creating Unique.seqs
 
-mothur > unique.seqs(fasta=Oyster.trim.trim.fasta, list=Oyster.trim.trim.accnos )
-list is not a valid parameter.
-The valid parameters are: fasta, name, count, format, seed, inputdir, and outputdir.
-[ERROR]: did not complete unique.seqs.
+	mothur > unique.seqs(fasta=Oyster.trim.trim.fasta)
 
-mothur > unique.seqs(fasta=Oyster.trim.trim.fasta, name=Oyster.trim.trim.accnos )
-[ERROR]: GN85KWK04INVPR is in your fasta file, and not in your namefile, please correct.
-[ERROR]: GN85KWK04J1GIY is in your fasta file, and not in your namefile, please correct.
-[ERROR]: GN85KWK04ISLWP is in your fasta file, and not in your namefile, please correct.
-[ERROR]: GN85KWK04I0ORO is in your fasta file, and not in your namefile, please correct.
-[ERROR]: GN85KWK04I6QXQ is in your fasta file, and not in your namefile, please correct.
-[ERROR]: GN85KWK04I48FY is in your fasta file, and not in your namefile, please correct.
-[ERROR]: GN85KWK04I8L2E is in your fasta file, and not in your namefile, please correct.
-[ERROR]: GN85KWK04JD4FU is in your fasta file, and not in your namefile, please correct.
-[ERROR]: GN85KWK04JPOYL is in your fasta file, and not in your namefile, please correct.
-[ERROR]: GN85KWK04I07JK is in your fasta file, and not in your namefile, please correct.
-[ERROR]: GN85KWK04JHJ4I is in your fasta file, and not in your namefile, please correct.
-
-mothur > unique.seqs(fasta=Oyster.trim.trim.fasta)
 [WARNING]: This command can take a namefile and you did not provide one. The current namefile is Oyster.trim.trim.accnos which seems to match Oyster.trim.trim.fasta.
 98177	47028
 
@@ -152,7 +136,7 @@ Oyster.trim.trim.names
 Oyster.trim.trim.unique.fasta
 
 
-mothur > summary.seqs(fasta=Oyster.trim.trim.unique.fasta)
+	mothur > summary.seqs(fasta=Oyster.trim.trim.unique.fasta)
 
 Using 36 processors.
 [WARNING]: This command can take a namefile and you did not provide one. The current namefile is Oyster.trim.trim.names which seems to match Oyster.trim.trim.unique.fasta.
@@ -170,30 +154,50 @@ Mean:	1	271	271	0	4
 
 It took 1 secs to summarize 47028 sequences.
 
+	Output File Names:
+	Oyster.trim.trim.unique.summary
+
+## ALIGNEMNT
+
+	mothur > align.seqs(fasta=Oyster.trim.trim.unique.fasta, reference=silva.bacteria.fasta, processors=2)
+
+		Using 2 processors.
+		Reading in the silva.bacteria.fasta template sequences...	DONE.
+		It took 14 to read  14956 sequences.
+		Aligning sequences from Oyster.trim.trim.unique.fasta ...
+		It took 548 secs to align 47028 sequences.
+
+	[WARNING]: 47028 of your sequences generated alignments that eliminated too many bases, a list is provided in 	Oyster.trim.trim.unique.flip.accnos.
+	[NOTE]: 47004 of your sequences were reversed to produce a better alignment.
+
+	It took 548 seconds to align 47028 sequences.
+
+	Output File Names: 
+	Oyster.trim.trim.unique.align
+	Oyster.trim.trim.unique.align.report
+	Oyster.trim.trim.unique.flip.accnos
+
+Know Summarizing
+
+	mothur > summary.seqs(fasta=Oyster.trim.trim.unique.align, name=Oyster.trim.trim.names)
+
+	Using 2 processors.
+
+				Start	End	NBases	Ambigs	Polymer	NumSeqs
+		Minimum:	1044	1044	1	0	1	1
+		2.5%-tile:	10255	23444	143	0	4	2455
+		25%-tile:	10259	23444	290	0	4	24545
+		Median: 	10261	23444	299	0	4	49089
+		75%-tile:	10291	23444	299	0	4	73633
+		97.5%-tile:	16413	23444	300	0	6	95723
+		Maximum:	43113	43116	300	0	8	98177
+		Mean:		11147	23438	282	0	4
+		# of unique seqs:	47028
+		total # of seqs:	98177
+
+It took 44 secs to summarize 98177 sequences.
+
 Output File Names:
 Oyster.trim.trim.unique.summary
 
-
-mothur > screen.seqs(fasta=Oyster.trim.trim.unique.fasta, maxambig=0)
-
-Using 36 processors.
-[WARNING]: This command can take a namefile and you did not provide one. The current namefile is Oyster.trim.trim.names which seems to match Oyster.trim.trim.unique.fasta.
-
-It took 0 secs to screen 47028 sequences, removed 0.
-
-[NOTE]: no sequences were bad, removing Oyster.trim.trim.unique.bad.accnos
-
-
-Output File Names:
-Oyster.trim.trim.unique.good.fasta
-
-
-It took 1 secs to screen 47028 sequences.
-
-mothur > list.seqs(fasta=Oyster.trim.trim.unique.good.fasta)
-
-Output File Names: 
-Oyster.trim.trim.unique.good.accnos
-
-
-
+	
