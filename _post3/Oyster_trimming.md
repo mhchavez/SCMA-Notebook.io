@@ -20,20 +20,20 @@
 
 
 Table 1: 
-		 Start	End	NBases	Ambigs	Polymer	NumSeqs
-Minimum:	 1	     35	     35	     0	     2	1
-2.5%-tile: 1	     85	     85	     0	     4	2853
-25%-tile:	 1	     308	     308	     0	     4	28527
-Median: 	 1	     320	     320	     0	     4	57053
-75%-tile:	 1	     321	     321	     0	     5	85579
-97.5%-tile:1	     323	     323	     1	     6	111253
-Maximum:	 1	     633	     633	     13	     19	114105
-Mean:	 1	     295	     295	     0	     4
-# of Seqs:	114105
+		 Start	     End	NBases	Ambigs	Polymer	NumSeqs
+Minimum:	 1	     35	     	35	     0	     2	      1
+2.5%-tile: 	 1	     85	    	85	     0	     4	   2853
+25%-tile:	 1	     308	308	     0	     4	  28527
+Median: 	 1	     320	320	     0	     4	  57053
+75%-tile:	 1	     321	321	     0	     5	  85579
+97.5%-tile:	 1	     323	323	     1	     6	 111253
+Maximum:	 1	     633	633	     13	     19	 114105
+Mean:		 1	     295	295	     0	     4
+Number of Seqs:	114105
 
-Output File Names:
-Oyster.summary
-Note: the Original paper mentioned an original 237,842 raw reads, but non all of them were actually public at the database
+	Output File Names:
+	Oyster.summary
+	Note: the Original paper mentioned an original 237,842 raw reads, but non all of them were actually public at the database
 
 Know we can proceed to trim the sequences (I have previously look at the files and determined that only the forward primer is present, therefore we will trim it from all the sequences, allowing for a maximum of 3 bases different from the given sequence in a file named oligostest3.oligos.
 
@@ -113,10 +113,10 @@ and how many were removed
      Mean:	     1	282	282	     0	     4
      # of Seqs:	98177
 
-It took 2 secs to summarize 98177 sequences.
+	It took 2 secs to summarize 98177 sequences.
 
-Output File Names:
-Oyster.trim.trim.summary
+	Output File Names:
+	Oyster.trim.trim.summary
 
 
 	mothur > list.seqs(fasta=Oyster.trim.trim.fasta)
@@ -128,19 +128,20 @@ Creating Unique.seqs
 
 	mothur > unique.seqs(fasta=Oyster.trim.trim.fasta)
 
-[WARNING]: This command can take a namefile and you did not provide one. The current namefile is Oyster.trim.trim.accnos which seems to match Oyster.trim.trim.fasta.
-98177	47028
+	[WARNING]: This command can take a namefile and you did not provide one. The current namefile is Oyster.trim.trim.accnos which 	seems to match Oyster.trim.trim.fasta.
+	98177	47028
 
-Output File Names: 
-Oyster.trim.trim.names
-Oyster.trim.trim.unique.fasta
+	Output File Names: 
+	Oyster.trim.trim.names
+	Oyster.trim.trim.unique.fasta
 
 
 	mothur > summary.seqs(fasta=Oyster.trim.trim.unique.fasta)
 
-Using 36 processors.
-[WARNING]: This command can take a namefile and you did not provide one. The current namefile is Oyster.trim.trim.names which seems to match Oyster.trim.trim.unique.fasta.
 
+	[WARNING]: This command can take a namefile and you did not provide one. The current namefile is Oyster.trim.trim.names which seems to match Oyster.trim.trim.unique.fasta.
+
+TABLE 
 		Start	End	NBases	Ambigs	Polymer	NumSeqs
 Minimum:	1	100	100	0	3	1
 2.5%-tile:	1	134	134	0	4	1176
@@ -150,7 +151,7 @@ Median: 	1	297	297	0	4	23515
 97.5%-tile:	1	300	300	0	7	45853
 Maximum:	1	300	300	0	8	47028
 Mean:	1	271	271	0	4
-# of Seqs:	47028
+number of Seqs:	47028
 
 It took 1 secs to summarize 47028 sequences.
 
@@ -195,38 +196,39 @@ Know Summarizing
 		# of unique seqs:	47028
 		total # of seqs:	98177
 
-It took 44 secs to summarize 98177 sequences.
+	It took 44 secs to summarize 98177 sequences.
 
-Output File Names:
-Oyster.trim.trim.unique.summary
+	Output File Names:
+	Oyster.trim.trim.unique.summary
 
-mothur > screen.seqs(fasta=Oyster.trim.trim.unique.align, name=Oyster.trim.trim.names, end=23444, optimize=start, criteria=95, processors=2)
+	mothur > screen.seqs(fasta=Oyster.trim.trim.unique.align, name=Oyster.trim.trim.names, end=23444, optimize=start, criteria=95, processors=2)
 
-Using 2 processors.
-Optimizing start to 16310.
+	Using 2 processors.
+	Optimizing start to 16310.
 
-It took 58 secs to screen 47028 sequences, removed 2707.
+	It took 58 secs to screen 47028 sequences, removed 2707.
 
-/******************************************/
-Running command: remove.seqs(accnos=Oyster.trim.trim.unique.bad.accnos.temp, name=Oyster.trim.trim.names)
-Removed 3417 sequences from your name file.
+	/******************************************/
+	Running command: remove.seqs(accnos=Oyster.trim.trim.unique.bad.accnos.temp, name=Oyster.trim.trim.names)
+	Removed 3417 sequences from your name file.
 
-Output File Names: 
-Oyster.trim.trim.pick.names
+	Output File Names: 
+	Oyster.trim.trim.pick.names
 
-/******************************************/
+	/******************************************/
 
-Output File Names:
-Oyster.trim.trim.unique.good.align
-Oyster.trim.trim.unique.bad.accnos
-Oyster.trim.trim.good.names
+	Output File Names:
+	Oyster.trim.trim.unique.good.align
+	Oyster.trim.trim.unique.bad.accnos
+	Oyster.trim.trim.good.names
 
 
-It took 110 secs to screen 47028 sequences.
+	It took 110 secs to screen 47028 sequences.
 
-mothur > summary.seqs(fasta=Oyster.trim.trim.unique.good.align, name=Oyster.trim.trim.good.names)
+	mothur > summary.seqs(fasta=Oyster.trim.trim.unique.good.align, name=Oyster.trim.trim.good.names)
 
-Using 2 processors.
+
+table
 
 		Start	End	NBases	Ambigs	Polymer	NumSeqs
 Minimum:	10243	23444	151	0	3	1
@@ -237,7 +239,7 @@ Median: 	10261	23444	299	0	4	47381
 97.5%-tile:	15887	23444	300	0	6	92392
 Maximum:	16310	26173	300	0	8	94760
 Mean:	10882	23444	287	0	4
-# of unique seqs:	44321
+Number of unique seqs:	44321
 total # of seqs:	94760
 
 It took 51 secs to summarize 94760 sequences.
