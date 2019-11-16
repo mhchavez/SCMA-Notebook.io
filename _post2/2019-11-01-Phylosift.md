@@ -39,11 +39,19 @@ To proceed with the analysis we need two pieces of information:
 In these section we obtained the result for a data set SRR100123.fastq. These dataset belongs to a study of the fecal microbiome and the associated functions of 5 healthy cats.
 
 <table>
-  <td><p align="center"><img src="/IMAGES/nt2/bacteriacomposition2.jpg"></p></td>
   <td><p align="center"><img src="/IMAGES/nt2/bacteriacomposition.jpg"></p></td>
+  <td><p align="center"><img src="/IMAGES/nt2/bacteriacomposition2.jpg"></p></td>
+  <tr>
+  <td><p align="center">Figure 1. Original view of total composition for dataset<p></td>
+  <td><p align="center">Figure 2. Bacteria composition at the Phyla order<p></td>
+  </tr>
   <tr>
   <td><p align="center"><img src="/IMAGES/nt2/firmicutescomposition.jpg"></p></td>
   <td><p align="center"><img src="/IMAGES/nt2/bacteriodetescomposition.jpg"></p></td>
+  </tr>
+  <tr>
+  <td><p align="center">Figure3. Firmicutes composition at the Class order</p></td>
+  <td><p align="center">Figure4. Bacteroides composition at the Class order</p></td>
   </tr>
  </table>
 
