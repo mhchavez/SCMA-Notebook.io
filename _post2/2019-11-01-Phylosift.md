@@ -28,19 +28,20 @@ To proceed with the analysis we need two pieces of information:
   
     
  ## Outputs
- 
-marker_summary.txt = how many reads hit each marker
-taxa_summary = overall taxonomic data for your sample
-sequence_taxa = information about each sequence and its probability distribution
-
-and an html file that shows a Krona plot
+ <ol>
+  <li>marker_summary.txt = how many reads hit each marker.</li>
+  <li>taxa_summary = overall taxonomic data for your sample.</li>
+  <li>sequence_taxa = information about each sequence and its probability distribution.</li>
+  <li>An html file that shows a Krona plot.</li>
 
 ## Analyzig our data set
 
-In these section we obtained the result for a data set SRR100123.fastq. These dataset belongs to a study of the microbiome of 5 healthy cats
+In these section we obtained the result for a data set SRR100123.fastq. These dataset belongs to a study of the fecal microbiome and the associated functions of 5 healthy cats.
 
-The feline fecal microbiota plays an important role not only to animal health but also to human health as a reservoir for potential zoonotic pathogens and antibiotic resistant strains. In order to characterize the fecal microbial community and its functional capacity in domestic cats, we performed this study as the pioneer to use gene-centric metagenomic approach. Pooled fecal DNA samples from five healthy household cats were subjected to pyrosequencing. 454 GS junior system generated 152,494 pyrosequencing reads (total of 5,405 contigs) which have been classified to both phylogenetic and metabolic diversity of feline fecal microbiota. The Bacteroides/Chlorobi group is the most predominant bacterial phyla comprised ~68% and followed by Firmicutes (~13%) and Proteobacteria (~6%) respectively. Archaea, fungi and virus were minor community in overall diversity. Different from other metagenomes, three functional catagories such as dormancy and sporulation, macromolecular synthesis and secondary metabolism were depleted. Interestingly, this study also provided the diversity of enteric zoonotic pathogens (0.01-2.5%) as well as genes involved in antimicrobial resistant mechanisms. According to the similarity and distances based clustering among nine gastrointestinal metagenomes from five different hosts, cat metagenome clustered closely together with chicken both in phylogenetic level and in metabolic level (>80%). Future studies are required to provide deeper understanding on both intrinsic and extrinsic effects such as age, genetics and dietary interventions in feline gastrointestinal microbiome.
+<p><img source>
+  
+
+The Bacteroides/Chlorobi group is the most predominant bacterial phyla comprised ~47%, followed by Firmicutes (~40%), Proteobacteria (~6%), Fusobacteria (~4%), and Actinobacteria (~3%). 
+Firmicutes is composed of ~77% Clostridia, ~15% Negativicutes and ~7% Erysipelotrichia. While Bacteriodes belongs 100% to the Bacteroidetes Class.
 
 
-
- results and discussion 
