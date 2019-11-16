@@ -12,7 +12,7 @@ To proceed with the analysis we need two pieces of information:
  
   -> Download : https://figshare.com/articles/PhyloSift_markers_database/5755404
   
-  ## command
+## command
   
       phylosift all --paired <sequences_file_read1> <sequences_file_read2> --disable_updates --output=<resul_file_name> --config=phylosiftrc_mcb5896.txt
   
@@ -25,21 +25,27 @@ To proceed with the analysis we need two pieces of information:
   --output (here we specify the name of the directory that will hold all the results)
   
   -- config (information about the run???????)
-  
-    
- ## Outputs
+ 
+## Outputs
  <ol>
   <li>marker_summary.txt = how many reads hit each marker.</li>
   <li>taxa_summary = overall taxonomic data for your sample.</li>
   <li>sequence_taxa = information about each sequence and its probability distribution.</li>
   <li>An html file that shows a Krona plot.</li>
+ </ol>
 
 ## Analyzig our data set
 
 In these section we obtained the result for a data set SRR100123.fastq. These dataset belongs to a study of the fecal microbiome and the associated functions of 5 healthy cats.
 
-<p><img source>
-  
+<table>
+  <td><p align="center"><img src="/IMAGES/bacteriacomposition2.jpg"></p></td>
+  <td><p align="center"><img src="/IMAGES/bacteriacomposition.jpg"></p></td>
+  <tr>
+  <td><p align="center"><img src="/IMAGES/firmicutescomposition.jpg"></p></td>
+  <td><p align="center"><img src="/IMAGES/bacteriodetescomposition.jpg"></p></td>
+  </tr>
+ </table>
 
 The Bacteroides/Chlorobi group is the most predominant bacterial phyla comprised ~47%, followed by Firmicutes (~40%), Proteobacteria (~6%), Fusobacteria (~4%), and Actinobacteria (~3%). 
 Firmicutes is composed of ~77% Clostridia, ~15% Negativicutes and ~7% Erysipelotrichia. While Bacteriodes belongs 100% to the Bacteroidetes Class.
