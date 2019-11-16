@@ -36,7 +36,7 @@ To proceed with the analysis we need two pieces of information:
 
 ## Analyzig our data set
 
-In these section we obtained the result for a data set SRR100123.fastq. These dataset belongs to a study of the fecal microbiome and the associated functions of 5 healthy cats.
+In these section we obtained the result for a data set SRR100123.fastq. These dataset belongs to a study of the fecal microbiome and the associated functions of 5 healthy cats.The Kronos plot generated after running the command is showed in the following figures. It is an interactive view showing the composition at different taxonomic levels.
 
 <table>
   <td><p align="center"><img src="/IMAGES/nt2/bacteriacomposition.jpg"></p></td>
