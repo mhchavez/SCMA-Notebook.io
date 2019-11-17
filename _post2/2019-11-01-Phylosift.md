@@ -58,4 +58,5 @@ In these section we obtained the result for a data set SRR100123.fastq. These da
 The Bacteroides/Chlorobi group is the most predominant bacterial phyla comprised ~47%, followed by Firmicutes (~40%), Proteobacteria (~6%), Fusobacteria (~4%), and Actinobacteria (~3%). 
 Firmicutes is composed of ~77% Clostridia, ~15% Negativicutes and ~7% Erysipelotrichia. While Bacteriodes belongs 100% to the Bacteroidetes Class.
 
+[:house: Back to home](https://github.com/mhchavez/SMCA-notebook1/wiki)
 
