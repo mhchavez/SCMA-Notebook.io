@@ -24,7 +24,7 @@ To proceed with the analysis we need two pieces of information:
   
   --output (here we specify the name of the directory that will hold all the results)
   
-  -- config (information about the run???????)
+  -- config (information about the run)
  
 ## Outputs
  <ol>
