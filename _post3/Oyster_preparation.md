@@ -173,7 +173,8 @@ And finally we can summarize the output:
 ## ALIGNEMNT
 
 **1. Silva bacteria dataset preparation**
- we have to prepare the silva bacteria dataset to restrinct the aligment to only the V4 region:
+
+ we must prepare the silva bacteria dataset to restrinct the aligment to only the V4 region:
 
 	mothur > pcr.seqs(fasta=silva.bacteria.fasta ,start=11894, end=25319,keepdots=F)
 
