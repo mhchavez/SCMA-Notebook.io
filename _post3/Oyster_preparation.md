@@ -261,7 +261,7 @@ B) And we summarize the aligment outputs
 	Output File Names:
 	Oyster.trim.unique.summary
 
-**3. Post aligment processing
+**3. Post aligment processing**
 
 	
 A) After aligment we have to ensure that the reads start and finish overlapin in the same region, to do it mothur have many different options, in my case I ooptimize the start and end of the reads to the 90%.
@@ -352,6 +352,7 @@ d) Finally because the previous manipulation we have to re run the unique seqs c
 ## OTUS picking
 
 **1. Preclustering**
+
 Now that we have our reads trimmed and cleaned we will start putting the into groups, the first step is to cluster those reads that are 2bp different of more abundant sequences
 
 	mothur > pre.cluster(fasta=Oyster.trim.unique.good.filter.unique.fasta, name=Oyster.trim.unique.good.filter.names, group=Oyster.good.groups, diffs=2)
