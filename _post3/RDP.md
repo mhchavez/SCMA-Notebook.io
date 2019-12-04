@@ -1,4 +1,4 @@
-# Taxonomic Clasification and OTU's picking
+# Taxonomic Clasification and OTU's picking using RDP trainset
 
 ## Classification
 
