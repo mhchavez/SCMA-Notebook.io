@@ -95,8 +95,7 @@
 
         iter	time	label	num_otus	cutoff	tp	tn	fp	fn	sensitivity	specificity	ppv	npv	fdr	accuracy	mcc	f1score
 
-        0.03
-        0	0	0.03	5778	0.03	0	16626772	0	62981	0	1	0	0.996226	1	0.996226	0	0	
+        0.03      0	0	0.03	5778	0.03	0	16626772	0	62981	0	1	0	0.996226	1	0.996226	0	0	
         1	0	0.03	2101	0.03	52776	16618357	8415	10205	0.837967	0.999494	0.86248	0.999386	0.86248	0.998884	0.849576	0.850047	
         2	0	0.03	2041	0.03	54183	16617708	9064	8798	0.860307	0.999455	0.856689	0.999471	0.856689	0.99893	0.857959	0.858494	
         3	0	0.03	2048	0.03	54176	16617780	8992	8805	0.860196	0.999459	0.857649	0.99947	0.857649	0.998934	0.858387	0.858921	
@@ -151,7 +150,8 @@
         Output File Names: 
         Oyster.trim.unique.good.filter.unique.precluster.pick.pick.phylip.tre
 
-
+Aditionally we will rename the files to a easily handle naming system
+ 
         mothur > rename.file(count=Oyster.trim.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.count_table, tree=Oyster.trim.unique.good.filter.unique.precluster.pick.pick.phylip.tre, shared=Oyster.trim.unique.good.filter.unique.precluster.pick.pick.opti_mcc.shared, constaxonomy=Oyster.trim.unique.good.filter.unique.precluster.pick.pick.opti_mcc.0.03.cons.taxonomy,prefix=final, deleteold=f)
 
         Current files saved by mothur:
