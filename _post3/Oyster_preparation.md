@@ -213,7 +213,7 @@ And finally we can summarize the output:
 	Output File Names:
 	silva.v4.summary
 
-**2. Aligment of samples to dataset
+**2. Aligment of samples to dataset**
 
 A) Once prepared the dataset we move onto the aligment of our reads to silva bacteria V4 region
 
