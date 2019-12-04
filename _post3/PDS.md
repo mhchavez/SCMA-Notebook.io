@@ -101,8 +101,7 @@ And summarizing:
 
     iter	time	label	num_otus	cutoff	tp	tn	fp	fn	sensitivity	specificity	ppv	npv	fdr	accuracy	mcc	f1score
 
-    0.03
-    0	0	0.03	5803	0.03	0	16771038	0	63465	0	1	0	0.99623	1	0.99623	0	0	
+    0.03    0	0	0.03	5803	0.03	0	16771038	0	63465	0	1	0	0.99623	1	0.99623	0	0	
     1	0	0.03	2099	0.03	52175	16762662	8376	11290	0.822107	0.999501	0.86167	0.999327	0.86167	0.998832	0.841072	0.841424	
     2	0	0.03	2047	0.03	54423	16762119	8919	9042	0.857528	0.999468	0.859193	0.999461	0.859193	0.998933	0.857824	0.85836	
     3	0	0.03	2043	0.03	54503	16762091	8947	8962	0.858788	0.999467	0.858991	0.999466	0.858991	0.998936	0.858356	0.85889	
@@ -134,7 +133,7 @@ And summarizing:
     Oyster.trim.unique.good.filter.unique.precluster.pick.pick.opti_mcc.0.03.cons.taxonomy
     Oyster.trim.unique.good.filter.unique.precluster.pick.pick.opti_mcc.0.03.cons.tax.summary
 
-## PHYLOGENETIC TREE**
+## PHYLOGENETIC TREE
 
 **1. distance matrix**
 
