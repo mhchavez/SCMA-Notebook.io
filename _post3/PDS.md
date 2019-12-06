@@ -194,4 +194,5 @@ And summarizing:
       Output File Names: 
       final.opti_mcc.count.summary
       
-      [:house: Back to home](https://github.com/mhchavez/SMCA-notebook1/wiki)
+      
+ [:house: Back to home](https://github.com/mhchavez/SMCA-notebook1/wiki)
