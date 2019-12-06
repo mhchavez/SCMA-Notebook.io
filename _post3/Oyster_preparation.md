@@ -509,3 +509,4 @@ B) Second, we will remove the identified Chimeras
 
 The following step consist in classifying the read using a taxonomic database and based on it remove all contaminants. For these step I have used two different train sets the RDP and the PDS. The results for each variation is in a different page.
 
+[:house: Back to home](https://github.com/mhchavez/SMCA-notebook1/wiki)
